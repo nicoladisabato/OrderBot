@@ -2,8 +2,8 @@
 # OrderBot 🍕🍽️
 A GPT-based Chatbot for Food Ordering 🍽️ using data from MySQL DB and OpenAI Function Calling, through natural language.
 
+<img width="1010" alt="orderbot_image" src="https://github.com/nicoladisabato/OrderBot/assets/45854469/09441058-892e-4535-9112-8f9c8905cd3e">
 
-<img width="1010" alt="Screenshot 2023-08-27 alle 16 04 02" src="https://github.com/nicoladisabato/OrderBot/assets/45854469/e83ec0e6-5f38-4af9-8a5e-deda87c76f99">
 
 ## Overview
 OrderBot is an intelligent virtual server that uses the power of artificial intelligence to understand users' prompts and propose suitable items to order and finally send and save the customer's order, totally simulating the tasks of a server. Through an intuitive interface it is possible to ask for advice on products based on and to know any information relating to the menu.
