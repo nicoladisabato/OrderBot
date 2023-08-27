@@ -6,7 +6,8 @@ A GPT-based Chatbot for Food Ordering 🍽️ using data from MySQL DB and OpenA
 
 
 ## Overview
-OrderBot is an intelligent virtual server that uses the power of artificial intelligence to understand users' prompts and propose suitable items to order and finally send and save the customer's order, totally simulating the tasks of a server. Through an intuitive interface it is possible to ask for advice on products based on and to know any information relating to the menu.
+OrderBot is an intelligent virtual server that can take input questions related to a mysql database and uses the power of artificial intelligence to understand users' prompts and propose suitable items to order, totally simulating the tasks of a server. 
+Through an intuitive interface it is possible to ask for advice on products based on and to know any information relating to the menu.
 
 
 ## Main features
