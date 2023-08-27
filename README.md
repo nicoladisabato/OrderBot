@@ -49,6 +49,6 @@ chainlit run main.py -w
 ```
 
 ## Todo list
-- Specify the functions that create the order instance and insert it into the Orders table
-- Improve existing functions and their descriptions
-- Improve the initial prompt
+- [ ] Specify the functions that create the order instance and insert it into the Orders table
+- [ ] Improve existing functions and their descriptions
+- [ ] Improve the initial prompt
