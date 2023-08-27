@@ -15,6 +15,12 @@ Through an intuitive interface it is possible to ask for advice on products base
 - Interact with the chatbot using natural language to order products and better understand the best product to order, based on your own data.
 - AI-powered interaction: OrderBot uses advanced AI algorithms to take the correct data and generate a precise response.
 
+## Architecture
+```bash
+Database: MySQL
+Backend: Python + OpenAI Function Calling
+Frontend: Chainlit
+```
 
 ## Getting started
 1. Install all the dependencies using the command:
