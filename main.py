@@ -1,5 +1,6 @@
 import chainlit as cl
 import openai_functions
+cl.Message
 
 @cl.on_chat_start
 async def start():
@@ -13,7 +14,7 @@ What you want to eat?                  """).send()
 @cl.on_message
 async def main(message: str):
    # Your custom logic goes here…
-   answer = openai_functions.get_answer(message)
+   answer = openai_functions.get_answer(message.content)
    # Send a response back to the user
    await cl.Message(author="Chatbot",
      content=answer,
