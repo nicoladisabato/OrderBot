@@ -167,7 +167,7 @@ def get_answer(question):
 
 
         second_response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo-0613",
+            model="gpt-4o-mini",
             messages=messages,
             temperature=0,
             #max_tokens=256,

@@ -163,18 +163,27 @@ INSERT INTO Beers VALUES
 (1, 'QUARANTOT', 'Aromas of caramel, biscuit & honey blend with fruity (peach, mango), floral (jasmine), & woody notes. Sweet start leads to balanced finish, avoiding excessive bitterness.', 'Italy, Milan', 'Double IPA', 8, 140),
 (2, 'ESTRELLA GALICIA GLUTEN FREE', 'in the mouth it has a neutral and light taste with a marked hoppy note.', 'Spain', 'Special Lager (Gluten Free)', 4.5, 25);
 
-
 -- Create the get_beers procedure
 DELIMITER //
-CREATE PROCEDURE `get_beers`(IN beer_name VARCHAR(100))
+CREATE PROCEDURE get_beers(IN beer_name VARCHAR(100))
 BEGIN
-    IF beer_name <> '' THEN 
-		SELECT product_name, country, style, alcohol_content, ibu_value 
-        FROM Beers
-        WHERE LOWER(product_name) = LOWER(beer_name);
-        
-	ELSE SELECT product_name, country, style, alcohol_content, ibu_value 
-        FROM Beers;
-	END IF;
-END
+IF beer_name <> '' THEN
+SELECT product_name, country, style, alcohol_content, ibu_value
+FROM Beers
+WHERE LOWER(product_name) = LOWER(beer_name);
+
+ELSE SELECT product_name, country, style, alcohol_content, ibu_value
+    FROM Beers;
+END IF;
+END //
+DELIMITER ;
+
+-- Create the get_product_for_prompt procedure
+DELIMITER //
+CREATE PROCEDURE get_product_for_prompt()
+BEGIN
+    SELECT product_name, product_type
+    FROM products
+    WHERE available = TRUE;
+END //
 DELIMITER ;
